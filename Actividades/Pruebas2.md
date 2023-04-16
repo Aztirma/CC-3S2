@@ -51,6 +51,7 @@ valores = [0, 0, 1, 0, 0, 0, 0]
 
 ```
 **Solución** 
+
 De los casos de prueba proporcionados, los casos de prueba que son los valores limites son 'valors = [ ] (lista vacia)' y 'valores = [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]'. Puesto que el primer caso es un valor limite que prueba la función con el valor más pequeño posible y en el segundo caso lo prueba con lista ordenada en orden decreciente, es decir el valor máximo posible.
 
 ### Pruebas unitarias y de integración 
@@ -181,6 +182,7 @@ Referencia: [Automated Regression Testing: Everything You Need To Know ﻿](http
 - Cuando una nueva prueba expone un error, debe ejecutarla en todas las versiones anteriores del código hasta que encuentre la versión en la que se introdujo el error.
 
 **Solución**
+
  "Debe ejecutar un conjunto de pruebas cada vez que cambie el código."
  Las pruebas existentes que habían sido ejecutadas correctamente deben volver a ejecutarse debido a los cambios que se hicieron en el código, esto para corroborar si el software sigue funcionando. 
 
