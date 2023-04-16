@@ -50,8 +50,8 @@ valores = [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
 valores = [0, 0, 1, 0, 0, 0, 0]
 
 ```
-**Ejercicio** 
-
+**Solución** 
+De los casos de prueba proporcionados, los casos de prueba que son los valores limites son 'valors = [ ] (lista vacia)' y 'valores = [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]'. Puesto que el primer caso es un valor limite que prueba la función con el valor más pequeño posible y en el segundo caso lo prueba con lista ordenada en orden decreciente, es decir el valor máximo posible.
 
 ### Pruebas unitarias y de integración 
 
@@ -141,6 +141,8 @@ Decides comprar una mezcla de especias prefabricada en una tienda especializada.
 
 Pones salsa y aderezos en una corteza y la horneas, para ver si la corteza todavía se cocina bien con las cosas húmedas encima. Esto es ....
 
+**Solución-Falta**
+
 ### Pruebas de regresión automatizadas
 
 Las pruebas automatizadas significan ejecutar las pruebas y verificar tus resultados automáticamente. 
@@ -178,6 +180,9 @@ Referencia: [Automated Regression Testing: Everything You Need To Know ﻿](http
 
 - Cuando una nueva prueba expone un error, debe ejecutarla en todas las versiones anteriores del código hasta que encuentre la versión en la que se introdujo el error.
 
+**Solución**
+ "Debe ejecutar un conjunto de pruebas cada vez que cambie el código."
+ Las pruebas existentes que habían sido ejecutadas correctamente deben volver a ejecutarse debido a los cambios que se hicieron en el código, esto para corroborar si el software sigue funcionando. 
 
 **Ejercicio**
 
@@ -191,6 +196,13 @@ Referencia: [Automated Regression Testing: Everything You Need To Know ﻿](http
 - Al usar una herramienta de cobertura de código 
 
 - Después de pensar que solucionaste un error
+
+**Solución**
+
+Las opciones que son buenos momentos para volver a ejecutar las pruebas JUnit son: 
+"Antes de hacer git add/commit/push": Para asegurarse que todo funciona antes de hacer un commit
+"Después de pensar que solucionaste un error": Para asegurarse que al corregir tu error no implique nuevos errores.
+
 
 
 ###  Test First Development
@@ -234,6 +246,9 @@ La iteración es una característica de todos los procesos modernos de ingenier�
 - Caja de cristal
 - Cobertura
 
+**Solución** 
+
+De todas las técnicas proporcionadas aquellas que son útiles para elegir casos de prueba en el TFD antes de escribir cualquier código son:equivalencia, límites, caja negra y cobertura, ya que estas técnicas se basan en la especificación de requisitos y no en el código fuente.
 
 **Ejercicio** 
 
@@ -253,6 +268,10 @@ ayuda que puedas obtener para asegurarse de hacerlo bien.
 
 - Escribir un algoritmo de búsqueda lineal simple 
 
+**Solución** 
+
+Los pasos que me ayudarían a validar una especificación antes de implementar el algoritmo propuesto serían "Escribir un algorimtmos de busqueda lineal simple" pues se podrá verificar si esta busqueda cumple con los requisitos de la especificación
+
 **Ejercicio**
 
 ¿Cuál de estos pasos ayudará a validar tu conjunto de pruebas antes de implementar el algoritmo de búsqueda binaria? 
@@ -262,6 +281,11 @@ ayuda que puedas obtener para asegurarse de hacerlo bien.
 - ejecutar una herramienta de cobertura de código en una implementación simple
 
 - Verificación de tipos estáticos ejecutando el compilador de Java 
+
+**Solución** 
+
+El paso que ayudará a validar el conjunto de pruebas antes de implementar el algoritmo de busqueda binaria es "ejecutar una herramienta de cobertura de código en una implementación simple" ya que nos dirá que fracción del código será ejecutado por las pruebas y garantizar que se cubran todos los casos.
+
 
 ### Documenta tu estrategia de prueba 
 
@@ -353,6 +377,10 @@ La partición para el parámetro `a`:
 
 - En un comentario justo antes de un método de prueba JUnit 
 
+**Solución**
+  En un comentario justo antes de un método de prueba JUnit 
+
+
 La anotación `@Test` 
 
 - Justo antes de la clase `Math` 
@@ -362,6 +390,10 @@ La anotación `@Test`
 - Justo antes del método `max()` 
 
 - Justo antes de un método de prueba JUnit
+
+**Solución**
+  Justo antes de un método de prueba JUnit
+
 
 El comentario `covers a < b` 
 
@@ -373,6 +405,10 @@ El comentario `covers a < b`
 
 - En un comentario justo antes de un método de prueba JUnit
 
+**Solución**
+  En un comentario justo antes de un método de prueba JUnit
+
+
 El comentario `@return` el máximo de `a` y `b`
 
 - En un comentario al comienzo de `Math.java`
@@ -383,3 +419,5 @@ El comentario `@return` el máximo de `a` y `b`
 
 - En un comentario justo antes de un método de prueba JUnit
 
+**Solución**
+En un comentario justo antes de un método de prueba JUnit
