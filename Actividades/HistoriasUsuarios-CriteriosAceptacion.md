@@ -19,6 +19,10 @@ Inicia un repositorio llamado CC-3S2 y dentro una carpeta llamada Actividades. D
 - El usuario puede seleccionar la función "Exportar a XML". 
 - El usuario puede exportar datos a XML
 
+**Solución**
+
+Ninguna de las sentencias proporcionadas son ejemplos de historias de usuarios pues no describen las necesidades y objetivos específicos de un usuario. La mayoria de las sentencias parecen declaraciones tecinas,especificaciones de implementación, funciones especificas que no son importantes para el usuario.
+
 
 2 .  ¿Cuáles de las siguientes no son buenas historias? ¿Por qué?
 
@@ -28,16 +32,36 @@ Inicia un repositorio llamado CC-3S2 y dentro una carpeta llamada Actividades. D
 - El sistema puede calcular aproximaciones de puntos de silla para distribuciones de formas cuadráticas en variables normales. 
 - Todos los errores de tiempo de ejecución se registran de manera coherente.
 
+**Solución**
+
+De las sentencias proporcionadas las que no son buenas historias son las siguientes:
+- Un usuario puede dominar rápidamente el sistema.
+- El sistema puede calcular aproximaciones de puntos de silla para distribuciones de formas cuadráticas en variables normales. 
+ - Todos los errores de tiempo de ejecución se registran de manera coherente.
+
+ Ya que no describen una nesecidad o función específica que el usuario nesecite.
+
+
 3 . ¿Cuáles son cuatro buenas razones para usar historias de usuarios para expresar requisitos? 
+- Ayuda a comprender las nesecidades de los usuarios
+- Facilita la comunicación y comprensión de los requisitos
+- Mejora la eficiencia en los casos de prueba, pues sirven como base para estos
+- Las historias de usuario permiten una mejor planificación, esto evita riesgos de retraso u costos extras.
 
 
 4 . ¿Cuáles pueden ser dos inconvenientes de usar historias de usuario? 
 
+- Al usar historias de usuarios puede que no se implemente alguna funcionalidad de manera efectiva ya que a menudo las historias de usuario no proporcionan suficientes detalles.
+- Otro inconveniente que podría resultar de usar historias de usuario sería la complejidad en la gestión de un gran número de historias, lo que puede dificultar su seguimiento y gestión.
 
 5 . ¿Cómo debes manejar un requisito para que un sistema escale y  lo usen 1000 usuarios simultáneos? 
 
 
 6 . Proporciona algunos ejemplos de sistemas que podrían beneficiarse de una consideración más directa de la interfaz de usuario de lo que normalmente se da en un proyecto ágil.
+- Sistemas de atención al cliente
+- Sistemas de gestión de proyectos
+- Aplicaciones moviles 
+- Sistema de monitoreo
 
 
 7 . Imaginemos que tu y un amigo tienen una web de Pet Store y, durante este mes, presentan un 10% de descuento en la suscripción Premium. Entonces, cada vez que un usuario de una cuenta gratuita inicia sesión, se le muestra un mensaje que dice:
@@ -64,12 +88,17 @@ Más tarde, la interfaz de usuario manejará el valor de descuento recibido y pr
 
 `Criterios de aceptación` 
 
-`Dado`
+```
+`Dado` que estoy en la interfaz de usuario y he ingresado mi información de usuario
+`Cuando` envio una solicitud con los siguientes datos código de usuario y código de descuento
+`Entonces`recibo una respuesta exitosa con el valor del descuento en porcentaje
 
-`Cuando`
 
-`Entonces`
 
+```
+ 
+
+ 
 8 .  Planificación de Poker
  
 ```
