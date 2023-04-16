@@ -183,8 +183,7 @@ Referencia: [Automated Regression Testing: Everything You Need To Know ﻿](http
 
 **Solución**
 
- "Debe ejecutar un conjunto de pruebas cada vez que cambie el código."
- Las pruebas existentes que habían sido ejecutadas correctamente deben volver a ejecutarse debido a los cambios que se hicieron en el código, esto para corroborar si el software sigue funcionando. 
+ El enunciado que define mejor las pruebas de regresión es el siguiente :"debe ejecutar un conjunto de pruebas cada vez que cambie el código", puesto que las pruebas existentes que habían sido ejecutadas correctamente deben volver a ejecutarse debido a los cambios que se hicieron en el código, esto para corroborar si el software sigue funcionando. 
 
 **Ejercicio**
 
