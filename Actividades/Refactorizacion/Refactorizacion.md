@@ -197,11 +197,19 @@ Es por eso que debes escribir una prueba unitaria. Cuando cambia el código, pue
 
 **Ejercicio:** Agrega más funciones a la clase `Calculadora` utilizando los principios de TDD.
 
-Se agregaron dos funciones más a la clase `Calculadora`
+Siguiendo el enfoque TDD se agregaron 4 nuevas funciones más a la clase `Calculadora`
 
-![2023-04-20 (19)](https://user-images.githubusercontent.com/89436252/233399558-2538801a-4074-498c-8a47-cfcee20c5fb0.png)
+![2023-04-20 (26)](https://user-images.githubusercontent.com/89436252/233407227-c996828f-775e-471e-b556-597f6e4a9fc1.png)
 
-Respectivamente se agrego 2 pruebas más a la clase `CalculatorTest`
+Respectivamente para cada una de estas funciones, se escribio una prueba unitaria, en total 4 pruebas se agregaron a la clase `CalculatorTest`
 
-![2023-04-20 (22)](https://user-images.githubusercontent.com/89436252/233399961-5216d0a0-02b2-4598-8430-a6c340b29905.png)
+ ![2023-04-20 (27)](https://user-images.githubusercontent.com/89436252/233407335-4709f010-170a-4181-87a8-3bf48ea765b6.png)
+ 
+Al final, se ejecutaron las cuatro pruebas unitarias y se comprobó que todas ellas pasaron satisfactoriamente, asegurando que las nuevas funciones agregadas a la clase `Calculadora` funcionan correctamente."
+
+![2023-04-20 (30)](https://user-images.githubusercontent.com/89436252/233408460-5a23bb5a-9685-4802-a023-5aa760217d6e.png)
+
+ 
+ 
+
 
