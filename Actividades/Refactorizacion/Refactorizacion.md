@@ -99,6 +99,9 @@ public boolean getStatus() {
 
 Ejecuta la clase de prueba para verificar si todo está bien. ¡Debes ver una línea verde!
 
+![image](https://user-images.githubusercontent.com/89436252/233307177-3a789459-a544-4cc0-9faa-76fc2c4a578a.png)
+
+
 **Requisito 2:** La calculadora debe tener funciones de suma y resta. 
 
 **Prueba:**
