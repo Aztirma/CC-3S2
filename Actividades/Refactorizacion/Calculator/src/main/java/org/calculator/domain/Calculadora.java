@@ -35,4 +35,12 @@ public class Calculadora {
         }
         return Math.sqrt(n);
     }
+
+    public double power(double base, double exponent) {
+        return Math.pow(base, exponent);
+    }
+
+    public double percentage(double percent, double number) {
+        return percent / 100 * number;
+    }
 }

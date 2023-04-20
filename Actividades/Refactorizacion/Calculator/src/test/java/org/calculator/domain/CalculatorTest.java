@@ -33,14 +33,14 @@ public class CalculatorTest {
         assertEquals(2, calculadora.division(8, 4));
     }
 
-    /*
+
     @Test
     public void whenDivisionByZeroThenThrowException() {
         Throwable exception = assertThrows(IllegalArgumentException.class, () -> {
             calculadora.division(5, 0);
         });
-        assertEquals("No se puede divisor por  cero", exception.getMessage());
-    }*/
+        assertEquals("No se puede dividir por cero", exception.getMessage());
+    }
 
     //Ejercicio
 
@@ -54,5 +54,14 @@ public class CalculatorTest {
         assertEquals(5.0, calculadora.squareRoot(25), 0.0001);
     }
 
+    @Test
+    public void whenCalculatingPowerThenReturnCorrectAnswer() {
+        assertEquals(8.0, calculadora.power(2, 3), 0.0001);
+    }
+
+    @Test
+    public void whenCalculatingPercentageThenReturnCorrectAnswer() {
+        assertEquals(10.0, calculadora.percentage(20, 50), 0.0001);
+    }
 
 }
