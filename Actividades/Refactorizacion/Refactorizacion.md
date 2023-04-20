@@ -99,7 +99,7 @@ public boolean getStatus() {
 
 Ejecuta la clase de prueba para verificar si todo está bien. ¡Debes ver una línea verde!
 
-![image](https://user-images.githubusercontent.com/89436252/233307177-3a789459-a544-4cc0-9faa-76fc2c4a578a.png)
+![2023-04-20 (13)](https://user-images.githubusercontent.com/89436252/233395742-5bbb41f0-dbe1-4eab-b46a-cb8b6bbd83d6.png)
 
 
 **Requisito 2:** La calculadora debe tener funciones de suma y resta. 
@@ -140,6 +140,9 @@ Ahora puedes eliminar todo el código de inicialización de la calculadora en lo
 
 Realiza la implementación de la función de resta por tu cuenta. 
 
+![2023-04-20 (14)](https://user-images.githubusercontent.com/89436252/233396868-7c8d2bad-7bb2-4a4c-bd95-ac9fccc67713.png)
+
+
 **Requisito 3:** La calculadora debe tener función de división.
 
  Cuando alguien divide por cero, se debe lanzar una excepción. Escribamos la primera prueba para este requisito. 
@@ -174,6 +177,8 @@ Usamos `assertThrows` con Lambda de Java 8 para usar la función de división en
 
 Al final, verificamos el mensaje de excepción en el método `assertEquals`. 
 
+
+
 Ahora podemos cambiar el método `división` en la clase `Calculadora`.
 
 ```
@@ -188,4 +193,15 @@ public int division(int a, int b) {
 Si ejecutas la prueba, puedes verificar de inmediato si los cambios que realizó no interrumpen otras funciones del método. 
 Es por eso que debes escribir una prueba unitaria. Cuando cambia el código, puede verificar si todavía funciona como antes. 
 
+
+
 **Ejercicio:** Agrega más funciones a la clase `Calculadora` utilizando los principios de TDD.
+
+Se agregaron dos funciones más a la clase `Calculadora`
+
+![2023-04-20 (19)](https://user-images.githubusercontent.com/89436252/233399558-2538801a-4074-498c-8a47-cfcee20c5fb0.png)
+
+Respectivamente se agrego 2 pruebas más a la clase `CalculatorTest`
+
+![2023-04-20 (22)](https://user-images.githubusercontent.com/89436252/233399961-5216d0a0-02b2-4598-8430-a6c340b29905.png)
+
