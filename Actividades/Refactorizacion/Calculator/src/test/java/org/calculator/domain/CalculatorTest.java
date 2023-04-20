@@ -32,6 +32,7 @@ public class CalculatorTest {
     public void whenDivisionThenReturnCorrectAnswer() {
         assertEquals(2, calculadora.division(8, 4));
     }
+
     /*
     @Test
     public void whenDivisionByZeroThenThrowException() {
