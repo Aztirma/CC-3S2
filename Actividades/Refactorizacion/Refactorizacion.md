@@ -205,7 +205,7 @@ Respectivamente para cada una de estas funciones, se escribio una prueba unitari
 
  ![2023-04-20 (27)](https://user-images.githubusercontent.com/89436252/233407335-4709f010-170a-4181-87a8-3bf48ea765b6.png)
  
-Al final, se ejecutaron las cuatro pruebas unitarias y se comprobó que todas ellas pasaron satisfactoriamente, asegurando que las nuevas funciones agregadas a la clase `Calculadora` funcionan correctamente."
+Al final, se ejecutaron las cuatro pruebas unitarias y se comprobó que todas ellas pasaron satisfactoriamente, asegurando que las nuevas funciones agregadas a la clase `Calculadora` funcionan correctamente.
 
 ![2023-04-20 (30)](https://user-images.githubusercontent.com/89436252/233408460-5a23bb5a-9685-4802-a023-5aa760217d6e.png)
 
