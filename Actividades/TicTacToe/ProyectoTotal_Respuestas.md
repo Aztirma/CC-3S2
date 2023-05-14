@@ -47,9 +47,9 @@ Escribimos el primer criterio de aceptación de la siguiente manera :
 
 ```
 AC 1.1 Tablero vacío 
-Cuando 
-Entonces 
-Y
+Cuando inicio un juego de TicTacToe como jugador
+Entonces necesito un tablero vacío de 3 x 3 para comenzar el juego
+Y el tablero debe estar vacio al inicio del juego.
 ```
 
 Sin embargo aquí  no se especifica completamente el requisito. ¿Se puede jugar el juego en un tablero más grande (por ejemplo, 5 x 5) usando una cuadrícula de 3 x 3? 
@@ -58,15 +58,15 @@ Agregamos dos criterios de aceptación sobre los límites del tablero.
 
 ```
 AC 1.2 Referencia de fila no válida
-Dado 
-Cuando
-Entonces 
+Dado que el juego de TicTacToe se juega en un tablero de 3 x 3
+Cuando el jugador ingresa una fila que no existe (fuera del rango 1-3)
+Entonces el juego muestra un mensaje de error.
 ```
 ```
 AC 1.3 Referencia de columna no válida
-Dado 
-Cuando 
-Entonces
+Dado que el juego de TicTacToe se juega en un tablero de 3 x 3
+Cuando el jugador ingresa una columna que no existe (fuera del rango 1-3)
+Entonces el juego muestra un mensaje de error.
 ```
 
 ### Características del sprint 1
