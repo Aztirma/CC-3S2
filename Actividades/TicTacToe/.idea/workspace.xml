@@ -45,7 +45,7 @@
       <recent name="C:\Users\LENOVO\Documents\GitHub\CC-3S2\Actividades\TicTacToe\TictocToe\src\main\java\sprint2_0\prueba" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GUI">
+  <component name="RunManager" selected="JUnit.TestEmptyBoard">
     <configuration name="GUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sprint1_0.produccion.GUI" />
       <module name="TicTacToe" />
@@ -76,8 +76,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.GUI" />
         <item itemvalue="JUnit.TestEmptyBoard" />
+        <item itemvalue="Application.GUI" />
       </list>
     </recent_temporary>
   </component>
@@ -89,7 +89,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1684068278938</updated>
-      <workItem from="1684068280968" duration="2584000" />
+      <workItem from="1684068280968" duration="3441000" />
     </task>
     <servers />
   </component>
