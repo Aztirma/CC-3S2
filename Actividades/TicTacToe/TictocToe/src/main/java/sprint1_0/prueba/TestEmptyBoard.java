@@ -27,5 +27,15 @@ public class TestEmptyBoard {
         assertEquals("", board.getTurn(), 'X');
     }
 
-    
+    // Criterio de aceptación 1.2
+    @ Test
+    public void testInvalidRow(){
+        assertEqual(“ “, board.getCell(3, 0), -1);
+    }
+
+    // criterio de aceptación 1.3
+    @ Test
+    public void testInvalidColumn(){
+        assertEqual(" ", board.getCell(0, 3), -1);
+    }
 }
