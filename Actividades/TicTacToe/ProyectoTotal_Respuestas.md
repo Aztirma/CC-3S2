@@ -247,8 +247,11 @@ public void testInvalidRow(){
 public void testInvalidColumn(){
    assertEqual(" ", board.getCell(0, 3), -1);
   }
+  
+
 ```
 Aunque estas pruebas no tienen ningún error de sintaxis, fallan porque `grid [3] [0]` y `grid [0] [3]` en la declaración de retorno de `getCell` están fuera de límite a lo siguiente:
+![EmptyBoard-x.png](..%2F..%2F..%2F..%2F..%2FOneDrive%2FIm%E1genes%2FCapturas%20de%20pantalla%2FEmptyBoard-x.png)
 
 ```
 public int getCell(int row, int column){
@@ -259,9 +262,13 @@ public int getCell(int row, int column){
     }
 ``` 
 Ahora el código de trabajo ha implementado la primera historia de usuario. 
+![EmptyBoard.png](..%2F..%2F..%2F..%2F..%2FOneDrive%2FIm%E1genes%2FCapturas%20de%20pantalla%2FEmptyBoard.png)
 
 **Pregunta:** ¿se necesita refactorización?
+Debido a las modificaciones que se hicieron, las pruebas no fallaron y cumplieron así los criterios de aceptación, no hay necesidad de hacer una refactorización por el momento.
+Si en el futuro se planea expandir el tamaño del tablero o mejorar el manejo de celdas inválidas, se puede considerar hacer una refactorización del código.
 
+ 
 Según el DoD , debemos verificar si se cumple el objetivo de cobertura de la prueba y si el código fuente ha cumplido con las pautas de codificación. En efecto, cada declaración en `Board` ha sido compilada por al menos una de las tres pruebas. 
 
 La revisión del código no encontró ningún problema con el estilo de codificación. Así se realiza el Sprint 1. 
