@@ -194,6 +194,12 @@ public class TestBoardConsole {
 }
 
 ``` 
+**Explicacion :**
+``` 
+Esta es una prueba unitaria de la clase Console
+Dicha prueba tiene un método llamado testEmptyBoard() que se encarga de verificar si se muestra correctamente un tablero vacío en la consola del usuario. Para ello, se crea una instancia de la clase Console y se llama a su método displayBoard(), el cual es responsable de mostrar el tablero en la consola.
+Antes de ejecutar esta prueba, se ejecuta el método setUp() que crea una instancia de la clase Board, que representa el tablero del juego TicTacToe. Luego, después de ejecutar la prueba, se ejecuta el método tearDown(), que no hace nada en este caso.
+``` 
 
 ```
 public class Console {
@@ -215,7 +221,13 @@ public class Console {
     }
 }
 ```
-
+**Explicacion :**
+```
+Esta clase llamada Console, es la responsable de mostrar el tablero del juego TicTacToe en la consola del usuario.
+El constructor de la clase recibe un objeto de la clase Board, que representa el tablero del juego. Este objeto se almacena en la variable board para que los métodos de Console puedan acceder al estado actual del tablero.
+El método displayBoard() es el encargado de mostrar el tablero en la consola. Para hacerlo, recorre cada fila del tablero a través de un bucle for, e imprime las celdas correspondientes utilizando el método getCell() de la clase Board.
+Las llamadas a System.out.println() y System.out.print() se utilizan para imprimir en la consola los caracteres que representan las celdas y las líneas del tablero.
+``` 
 
 Ahora consideramos `AC 1.2` y `AC 1.3` porque son similares. La decisión que debemos tomar es cómo representar una celda no válida. 
 

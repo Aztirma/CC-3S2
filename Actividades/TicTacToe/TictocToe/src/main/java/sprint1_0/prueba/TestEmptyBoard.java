@@ -26,4 +26,6 @@ public class TestEmptyBoard {
         }
         assertEquals("", board.getTurn(), 'X');
     }
+
+    
 }
