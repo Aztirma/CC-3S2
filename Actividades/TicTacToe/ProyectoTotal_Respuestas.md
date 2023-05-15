@@ -347,25 +347,25 @@ Tenemos los siguientes criterios de aceptación (completa):
 
 ```
 AC 2.1 Un movimiento X válido 
-Dado 
-Cuando  
-Entonces
-Y 
+Dado un juego en curso con el turno de X
+Cuando  el jugador X hace un movimiento válido
+Entonces se coloca X en la celda
+Y el turno se cambia a 0
 ``` 
 ```
 AC 2.2 Un movimiento X ilegal en una celda ocupada
-Dado 
-Cuando  
-Entonces
-Y 
+Dado un juego en curso con el turno de X
+Cuando  el jugador X hace un moviemiento ilegal dentro del tablero
+Entonces no se cambia la celda
+Y no se cambia el turno
  ```
  
  ```
  AC 2.3 Un movimiento X ilegal dentro del tablero 
- Dado
- Cuando  
- Entonces
- Y 
+ Dado un juego en curso con el turno X
+ Cuando el jugador X hace un movimiento ilegal dentro del tablero
+ Entonces la celda no se cambia
+ Y se muestra un mensaje diciendo que su movimiento es inválido
 ```
 
 ```
@@ -557,7 +557,9 @@ Para escribir una prueba para `AC4.1`, necesitamos imaginar un escenario concret
 **Pregunta (V/F)** La secuencia de cuatro movimientos, `X (0,0), O (1,1), X (0,1), O (1,0)` no cumple la  necesidad. 
 
 Como es el turno de X, X puede moverse en `(0, 2)`, lo que resulta en una victoria y tenemos la siguiente prueba, que también pretende visualizar el escenario. 
-
+```
+La secuencia de movimientos no cumple la necesidad de la historia de usuario de que el juego termina después de cada movimiento y el jugador X gana al formar XXX. En la secuencia de movimientos dada, el jugador X no ha formado XXX en ningún momento y el juego continúa.
+```
 ```
 public void testXWon(){
      board.makeMove(0, 0);
@@ -775,17 +777,20 @@ Y el turno se cambia a O (jugador humano)
 ````
 ``` 
 AC 5.2 Una jugada ganadora de la computadora 
-Dado
-Cuando 
-Entonces
-Y 
+Dado un juego en curso
+Cuando el oponente de la computadora tiene un movimiento ganador después de que el jugador
+humano hace un movimiento válido
+Entonces la computadora hace el movimiento ganador
+Y se acabó el juego (la computadora ha ganado) 
 ``` 
 ```
 AC 5.3 Una jugada de bloqueo de la computadora
-Dado 
-Cuando 
-Y 
-Entonces
+Dado un juego en curso
+Cuando el jugador humano hace un movimiento válido con un próximo movimiento ganador si no
+está bloqueado
+Y el oponente de la computadora no tiene un movimiento ganador
+Entonces la computadora hace el movimiento de bloqueo
+Y se cambia de turno
 ``` 
 ``` 
 AC 5.4 Un movimiento aleatorio de la computadora
