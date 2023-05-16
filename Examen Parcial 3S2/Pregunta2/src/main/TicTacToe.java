@@ -47,11 +47,11 @@ public class TicTacToe {
             turn = (turn == 'X') ? 'O' : 'X';
         }
     }
-    public void jugar(int row, int column) {
+    public boolean jugar(int row, int column) {
         validarLimitesTablero(row, column);
         validarLugarOcupado(row, column);
         realizarMovimiento(row, column);
-        cambiarTurno();
+        return false;
 
     }
     private void validarLimitesTablero(int row, int column) {
