@@ -8,16 +8,16 @@ public class JugarTest {
         TicTacToe ticTacToe = new TicTacToe();
         ticTacToe.jugar(5, 2);
     }
-
     @Test(expected = RuntimeException.class)
-    public void testJugarFueraDeLimites2() {
+    public void testJugarLugarOcupado() {
         TicTacToe ticTacToe = new TicTacToe();
-        ticTacToe.jugar(0, 1);
+
+        ticTacToe.jugar(1, 1);
+        ticTacToe.jugar(1, 1); // Intentamos colocar otra pieza en la misma posición
+
+        // Si se ejecuta correctamente hasta aquí, significa que no se lanzó la excepción
+        fail("Se esperaba que se lanzara una RuntimeException por lugar ocupado.");
     }
 
-    @Test(expected = RuntimeException.class)
-    public void testJugarFueraDeLimites3() {
-        TicTacToe ticTacToe = new TicTacToe();
-        ticTacToe.jugar(2, 4);
-    }
+
 }
