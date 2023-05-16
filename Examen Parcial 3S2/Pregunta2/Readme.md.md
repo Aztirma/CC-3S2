@@ -25,7 +25,7 @@ cuando el argumento x es menor que 1 o mayor que 3 (el tablero es 3x3).
 
 *Una vez que se agrega, debería fallar porque no se lanza RuntimeException.*
 
-![2.png](..%2F..%2F..%2F..%2F..%2FDownloads%2Fsofr%2F2.png)
+![2.png](Examen Parcial 3S2/Pregunta2/imagenes/1.png)
 *La tercera vez, debería tener éxito porque el código que corresponde a esta prueba está completamente
 implementado.*
 ![3.png](..%2F..%2F..%2F..%2F..%2FDownloads%2Fsofr%2F3.png)
