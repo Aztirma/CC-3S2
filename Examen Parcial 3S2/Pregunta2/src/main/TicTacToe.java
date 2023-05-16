@@ -51,9 +51,14 @@ public class TicTacToe {
         validarLimitesTablero(row, column);
         validarLugarOcupado(row, column);
         realizarMovimiento(row, column);
-        return false;
-
+        for (int i = 0; i < TOTALROWS; i++) {
+            if (grid[i][0] == grid[i][1] && grid[i][1] == grid[i][2] && grid[i][0] != Cell.EMPTY) {
+                return true; // Hay un ganador en una línea horizontal
+            }
+        }
+        return false; // No hay ganador
     }
+
     private void validarLimitesTablero(int row, int column) {
         if (row < 0 || row >= TOTALROWS || column < 0 || column >= TOTALCOLUMNS) {
             throw new RuntimeException("Posición fuera de los límites del tablero.");
