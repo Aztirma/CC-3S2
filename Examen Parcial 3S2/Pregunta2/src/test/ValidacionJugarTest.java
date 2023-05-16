@@ -10,7 +10,7 @@ public class ValidacionJugarTest {
 
         // When
         Throwable exception = assertThrows(RuntimeException.class, () -> {
-            game.placePiece(2, 5);
+            game.Jugar(2, 5);
         });
 
         // Then
