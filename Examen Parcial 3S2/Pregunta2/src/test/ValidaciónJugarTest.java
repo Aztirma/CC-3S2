@@ -1,5 +1,4 @@
 import org.junit.Test;
-
 import static org.junit.Assert.*;
 public class ValidaciónJugarTest {
     //primera prueba
@@ -10,10 +9,12 @@ public class ValidaciónJugarTest {
 
         // When
         Throwable exception = assertThrows(RuntimeException.class, () -> {
-            game.Jugar(2, 5);
+            game.Jugar(1, 3);
         });
 
         // Then
         assertEquals("Invalid piece placement", exception.getMessage());
     }
+
+
 }

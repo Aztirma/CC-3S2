@@ -44,11 +44,9 @@ public class TicTacToeGame {
     }
 
     /**
-     *
      * @precond: none
      * @postcond: retorna Cell.EMPTY, Cell.CROSS, o Cell.NAUGHT if row >= 0 && row
-     *            < TOTALROWS && column >= 0 && column < TOTALCOLUMN en otro caso
-     *
+     * < TOTALROWS && column >= 0 && column < TOTALCOLUMN en otro caso
      */
     public Cell getCell(int row, int column) {
         if (row >= 0 && row < TOTALROWS && column >= 0 && column < TOTALCOLUMNS) {
@@ -65,9 +63,8 @@ public class TicTacToeGame {
     /**
      * @precond: none
      * @postcond: si (row, column) es una celda vacia valida,
-     *            la ficha del jugador se ha colocado en la celda
-     *             y el turno ha cambiado al otro jugador
-     *
+     * la ficha del jugador se ha colocado en la celda
+     * y el turno ha cambiado al otro jugador
      */
     public void makeMove(int row, int column) {
         if (row >= 0 && row < TOTALROWS && column >= 0 && column < TOTALCOLUMNS && grid[row][column] == Cell.EMPTY) {
@@ -109,3 +106,12 @@ public class TicTacToeGame {
                 || row + column == 2
                 && grid[0][2] == token && grid[1][1] == token && grid[2][0] == token);
     }
+    // PRIMER REQUISITO
+    public void Jugar(int row, int column) {
+        if (row < 1 || row > TOTALROWS || column < 1 || column > TOTALCOLUMNS) {
+            throw new RuntimeException("Invalid piece placement");
+        }
+    }
+}
+
+
