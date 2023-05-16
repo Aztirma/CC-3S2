@@ -81,7 +81,6 @@ public class TicTacToe {
                 return true; // Hay un ganador en una línea horizontal
             }
         }
-
         // Verificación de ganancia vertical
         for (int j = 0; j < TOTALCOLUMNS; j++) {
             if (grid[0][j] == grid[1][j] && grid[1][j] == grid[2][j] && grid[0][j] != Cell.EMPTY) {
@@ -91,6 +90,10 @@ public class TicTacToe {
         // Verificar ganancia en diagonal superior izquierda a inferior derecha
         if (grid[0][0] == grid[1][1] && grid[1][1] == grid[2][2] && grid[0][0] != Cell.EMPTY) {
             return true; // Hay un ganador en la diagonal superior izquierda a inferior derecha
+        }
+        // Verificar ganancia en diagonal inferior izquierda a superior derecha
+        if (grid[2][0] == grid[1][1] && grid[1][1] == grid[0][2] && grid[2][0] != Cell.EMPTY) {
+            return true; // Hay un ganador en la diagonal inferior izquierda a superior derecha
         }
         return false; // No hay ganador
     }

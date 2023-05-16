@@ -48,6 +48,16 @@ public class CondicionGanadora {
         boolean hayGanador = ticTacToe.jugar(1, 0); // O juega en la posición (1, 0) para ganar la diagonal superior izquierda a inferior derecha
         assertTrue(hayGanador); // Verificar que hay un ganador en la diagonal superior izquierda a inferior derecha
     }
+    @Test
+    public void condicionGanadoraDiagonal_DI() {
+        TicTacToe ticTacToe = new TicTacToe();
+        ticTacToe.jugar(2, 0); // X juega en la posición (2, 0)
+        ticTacToe.jugar(1, 1); // O juega en la posición (1, 1)
+        ticTacToe.jugar(0, 2); // X juega en la posición (0, 2)
+        boolean hayGanador = ticTacToe.jugar(1, 0); // O juega en la posición (1, 0) para ganar la diagonal inferior izquierda a superior derecha
+        assertTrue(hayGanador); // Verificar que hay un ganador en la diagonal inferior izquierda a superior derecha
+    }
+
 
 
 }
