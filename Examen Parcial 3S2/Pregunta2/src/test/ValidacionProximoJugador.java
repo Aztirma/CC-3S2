@@ -16,5 +16,13 @@ public class ValidacionProximoJugador {
         char turnAfterX = game.ProximoJugador();
         assertEquals('O', turnAfterX);
     }
-
+    @Test
+    public void testTurnAfterOShouldBeX() {
+        TicTacToeGame game = new TicTacToeGame();
+        game.makeMove(0, 0);  // Jugada del jugador X
+        game.makeMove(1, 1);  // Jugada del jugador O
+        char turnAfterO = game.ProximoJugador();
+        assertEquals('X', turnAfterO);
+    }
 }
+
