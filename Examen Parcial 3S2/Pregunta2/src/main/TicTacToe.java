@@ -51,9 +51,12 @@ public class TicTacToe {
         if (row < 0 || row >= TOTALROWS || column < 0 || column >= TOTALCOLUMNS) {
             throw new RuntimeException("Posición fuera de los límites del tablero.");
         }
+        if (grid[row][column] != Cell.EMPTY) {
+            throw new RuntimeException("Lugar ocupado.");
+        }
 
-        // Resto de la lógica del juego...
-        // Aquí puedes realizar las acciones necesarias al colocar una pieza en la posición dada.
+        grid[row][column] = (turn == 'X') ? Cell.CROSS : Cell.NOUGHT;
+        turn = (turn == 'X') ? 'O' : 'X';
     }
 
 }
