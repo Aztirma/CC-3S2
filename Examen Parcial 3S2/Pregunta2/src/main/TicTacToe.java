@@ -71,4 +71,8 @@ public class TicTacToe {
         turn = (turn == 'X') ? 'O' : 'X';
     }
 
+    public char proximoJugador() {
+        return 'X';
+    }
+
 }
