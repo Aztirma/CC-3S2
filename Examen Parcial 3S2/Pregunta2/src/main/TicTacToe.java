@@ -87,13 +87,10 @@ public class TicTacToe {
                 return true; // Hay una ganancia vertical
             }
         }
-        // Verificar ganancia en diagonal superior izquierda a inferior derecha
-        if (grid[0][0] == grid[1][1] && grid[1][1] == grid[2][2] && grid[0][0] != Cell.EMPTY) {
-            return true; // Hay un ganador en la diagonal superior izquierda a inferior derecha
-        }
-        // Verificar ganancia en diagonal inferior izquierda a superior derecha
-        if (grid[2][0] == grid[1][1] && grid[1][1] == grid[0][2] && grid[2][0] != Cell.EMPTY) {
-            return true; // Hay un ganador en la diagonal inferior izquierda a superior derecha
+        // Verificar ganancia en diagonales
+        if ((grid[0][0] == grid[1][1] && grid[1][1] == grid[2][2] && grid[0][0] != Cell.EMPTY) ||
+                (grid[0][2] == grid[1][1] && grid[1][1] == grid[2][0] && grid[0][2] != Cell.EMPTY)) {
+            return true; // Hay un ganador en una línea diagonal
         }
         return false; // No hay ganador
     }
