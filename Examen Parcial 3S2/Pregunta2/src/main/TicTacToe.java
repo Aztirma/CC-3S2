@@ -48,15 +48,26 @@ public class TicTacToe {
         }
     }
     public void jugar(int row, int column) {
+        validarLimitesTablero(row, column);
+        validarLugarOcupado(row, column);
+        realizarMovimiento(row, column);
+        cambiarTurno();
+    }
+    private void validarLimitesTablero(int row, int column) {
         if (row < 0 || row >= TOTALROWS || column < 0 || column >= TOTALCOLUMNS) {
             throw new RuntimeException("Posición fuera de los límites del tablero.");
         }
+    }
+    private void validarLugarOcupado(int row, int column) {
         if (grid[row][column] != Cell.EMPTY) {
             throw new RuntimeException("Lugar ocupado.");
         }
-
+    }
+    private void realizarMovimiento(int row, int column) {
         grid[row][column] = (turn == 'X') ? Cell.CROSS : Cell.NOUGHT;
-        turn = (turn == 'X') ? 'O' : 'X';
     }
 
+    private void cambiarTurno() {
+        turn = (turn == 'X') ? 'O' : 'X';
+    }
 }
