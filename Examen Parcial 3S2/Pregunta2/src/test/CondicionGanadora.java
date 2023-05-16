@@ -24,6 +24,18 @@ public class CondicionGanadora {
         assertTrue(ticTacToe.jugar(1, 2));
     }
 
+    @Test
+    public void condicionGanadoraVertical() {
+        TicTacToe ticTacToe = new TicTacToe();
 
+        // Jugada de X
+        ticTacToe.jugar(0, 0); // X
+        ticTacToe.jugar(1, 0); // O
+        ticTacToe.jugar(0, 1); // X
+        ticTacToe.jugar(2, 0); // O
+        ticTacToe.jugar(0, 2); // X
 
+        // Se espera que haya una ganancia vertical para X
+        assertTrue(ticTacToe.jugar(1, 2));
+    }
 }
