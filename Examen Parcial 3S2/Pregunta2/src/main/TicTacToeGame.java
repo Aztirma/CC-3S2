@@ -108,16 +108,26 @@ public class TicTacToeGame {
     }
     // PRIMER REQUISITO
     public void Jugar(int row, int column) {
-        if (row < 1 || row > TOTALROWS || column < 1 || column > TOTALCOLUMNS) {
-            throw new RuntimeException("Invalid piece placement");
-        }
-        if (grid[row][column] != Cell.EMPTY) {
-            throw new RuntimeException("Invalid piece placement");
-        }
+        validarUbicacionPieza(row, column);
+        validarCeldaVacia(row,column);
+        
         grid[row][column] = (turn == 'X') ? Cell.CROSS : Cell.NOUGHT;
         updateGameState(turn, row, column);
         turn = (turn == 'X') ? 'O' : 'X';
     }
+    private void validarUbicacionPieza(int row, int column) {
+        if (row < 1 || row > TOTALROWS || column < 1 || column > TOTALCOLUMNS) {
+            throw new RuntimeException("Ubicación de pieza inválida");
+        }
+    }
+
+    private void validarCeldaVacia(int row, int column) {
+        if (grid[row][column] != Cell.EMPTY) {
+            throw new RuntimeException("Ubicación de pieza inválida");
+        }
+    }
+
+
 }
 
 
