@@ -9,7 +9,6 @@ public class TicTacToe {
 
     public TicTacToe() {
         grid = new Cell[TOTALROWS][TOTALCOLUMNS];
-        ultimoJugador = ' '
         initBoard();
     }
 
@@ -53,7 +52,6 @@ public class TicTacToe {
         validarLugarOcupado(row, column);
         realizarMovimiento(row, column);
         cambiarTurno();
-        ultimoJugador = turn;
 
     }
     private void validarLimitesTablero(int row, int column) {
@@ -75,10 +73,6 @@ public class TicTacToe {
     }
 
     public char proximoJugador() {
-        if (ultimoJugador == 'X') {
-            return 'O';
-        } else {
-            return 'X';
-        }
-
+        return turn;
+    }
 }
