@@ -15,6 +15,7 @@ este enfoque, los ingenieros de pruebas pueden obtener resultados más confiable
 (b) Pruebas (2 puntos)
 
 Dada esta especificación:
+
 ![a](https://github.com/Aztirma/CC-3S2/assets/89436252/77b2b489-90cd-45b7-a5d5-681a82c18984)
 
 
