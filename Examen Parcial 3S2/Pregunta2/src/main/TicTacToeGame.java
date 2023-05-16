@@ -111,6 +111,12 @@ public class TicTacToeGame {
         if (row < 1 || row > TOTALROWS || column < 1 || column > TOTALCOLUMNS) {
             throw new RuntimeException("Invalid piece placement");
         }
+        if (grid[row][column] != Cell.EMPTY) {
+            throw new RuntimeException("Invalid piece placement");
+        }
+        grid[row][column] = (turn == 'X') ? Cell.CROSS : Cell.NOUGHT;
+        updateGameState(turn, row, column);
+        turn = (turn == 'X') ? 'O' : 'X';
     }
 }
 
