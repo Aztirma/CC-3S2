@@ -56,16 +56,10 @@ public class TicTacToeGame {
         }
     }
 
-    public char getTurn() {
+    public char ProximoJugador() {
         return turn;
     }
 
-    /**
-     * @precond: none
-     * @postcond: si (row, column) es una celda vacia valida,
-     * la ficha del jugador se ha colocado en la celda
-     * y el turno ha cambiado al otro jugador
-     */
     public void makeMove(int row, int column) {
         if (row >= 0 && row < TOTALROWS && column >= 0 && column < TOTALCOLUMNS && grid[row][column] == Cell.EMPTY) {
             grid[row][column] = (turn == 'X') ? Cell.CROSS : Cell.NOUGHT;
