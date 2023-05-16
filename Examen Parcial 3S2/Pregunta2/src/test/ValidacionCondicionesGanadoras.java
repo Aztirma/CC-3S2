@@ -1,3 +1,4 @@
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -21,4 +22,19 @@ public class ValidacionCondicionesGanadoras {
     public void testNoWinnerByDefault() {
         assertEquals(TicTacToeGame.GameState.PLAYING, game.getGameState());
     }
+
+    //Condicion ganadora 1
+    @Test
+    public void testHorizontalWinningCondition() {
+        game.makeMove(0, 0); // X
+        game.makeMove(1, 0); // O
+        game.makeMove(0, 1); // X
+        game.makeMove(1, 1); // O
+        game.makeMove(0, 2); // X
+
+        Assertions.assertEquals(TicTacToeGame.GameState.CROSS_WON, game.getGameState());
+    }
+
+
+
 }

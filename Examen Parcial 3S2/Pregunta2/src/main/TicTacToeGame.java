@@ -120,8 +120,9 @@ public class TicTacToeGame {
             throw new RuntimeException("Ubicación de pieza inválida");
         }
     }
-
-
+    public GameState getGameState() {
+        return currentGameState;
+    }
 }
 
 
