@@ -3,12 +3,13 @@ public class TicTacToe {
 
     private static final int TOTALROWS = 3;
     private static final int TOTALCOLUMNS = 3;
-
+    private char ultimoJugador;
     private Cell[][] grid;
     private char turn;
 
     public TicTacToe() {
         grid = new Cell[TOTALROWS][TOTALCOLUMNS];
+        ultimoJugador = ' '
         initBoard();
     }
 
@@ -52,6 +53,8 @@ public class TicTacToe {
         validarLugarOcupado(row, column);
         realizarMovimiento(row, column);
         cambiarTurno();
+        ultimoJugador = turn;
+
     }
     private void validarLimitesTablero(int row, int column) {
         if (row < 0 || row >= TOTALROWS || column < 0 || column >= TOTALCOLUMNS) {
@@ -72,7 +75,10 @@ public class TicTacToe {
     }
 
     public char proximoJugador() {
-        return 'X';
-    }
+        if (ultimoJugador == 'X') {
+            return 'O';
+        } else {
+            return 'X';
+        }
 
 }
