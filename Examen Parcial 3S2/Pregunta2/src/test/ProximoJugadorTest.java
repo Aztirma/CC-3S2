@@ -20,4 +20,16 @@ public class ProximoJugadorTest {
         ticTacToe.jugar(0, 0); // O realiza su movimiento
     }
 
+    @Test
+    public void X_despuesde_O() {
+        TicTacToe ticTacToe = new TicTacToe();
+        assertEquals('X', ticTacToe.proximoJugador()); // El primer turno es jugado por X
+        ticTacToe.jugar(1, 1); // O juega en una posición
+        assertEquals('O', ticTacToe.proximoJugador()); // El próximo turno debe ser jugado por O
+        ticTacToe.jugar(0, 0); // X juega en otra posición
+        assertEquals('X', ticTacToe.proximoJugador()); // El siguiente turno debe ser jugado por X
+    }
+
+
+
 }
