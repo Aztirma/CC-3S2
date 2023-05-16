@@ -47,4 +47,13 @@ public class TicTacToe {
             turn = (turn == 'X') ? 'O' : 'X';
         }
     }
+    public void jugar(int row, int column) {
+        if (row < 0 || row >= TOTALROWS || column < 0 || column >= TOTALCOLUMNS) {
+            throw new RuntimeException("Posición fuera de los límites del tablero.");
+        }
+
+        // Resto de la lógica del juego...
+        // Aquí puedes realizar las acciones necesarias al colocar una pieza en la posición dada.
+    }
+
 }
