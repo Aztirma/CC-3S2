@@ -9,7 +9,23 @@ public class ValidaciónJugarTest {
 
         // When
         Throwable exception = assertThrows(RuntimeException.class, () -> {
-            game.Jugar(1, 3);
+            game.Jugar(2, 5);
+        });
+
+        // Then
+        assertEquals("Invalid piece placement", exception.getMessage());
+    }
+
+
+    //segunda prueba
+    @Test
+    public void whenPiecePlacedOutsideYAxis_thenRuntimeExceptionIsThrown() {
+        // Given
+        TicTacToeGame game = new TicTacToeGame();
+
+        // When
+        Throwable exception = assertThrows(RuntimeException.class, () -> {
+            game.Jugar(0  , 2);
         });
 
         // Then
