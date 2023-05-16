@@ -94,4 +94,15 @@ public class TicTacToe {
         }
         return false; // No hay ganador
     }
+
+    public boolean hayEmpate() {
+        for (int row = 0; row < TOTALROWS; row++) {
+            for (int column = 0; column < TOTALCOLUMNS; column++) {
+                if (grid[row][column] == Cell.EMPTY) {
+                    return false; // Todavía hay casillas vacías, no es un empate
+                }
+            }
+        }
+        return true; // Todas las casillas están ocupadas, es un empate
+    }
 }
