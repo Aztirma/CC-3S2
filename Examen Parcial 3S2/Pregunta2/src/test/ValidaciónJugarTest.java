@@ -16,7 +16,6 @@ public class ValidaciónJugarTest {
         assertEquals("Invalid piece placement", exception.getMessage());
     }
 
-
     //segunda prueba
     @Test
     public void whenPiecePlacedOutsideYAxis_thenRuntimeExceptionIsThrown() {
