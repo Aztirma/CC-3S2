@@ -23,28 +23,27 @@ Dada esta especificación:
  escribiendo una buena partición del espacio de entrada solo en el límite de entrada, es
  decir, la partición no debe mencionar ni el texto ni el delimitador.
 
-a) Límite < 0: Prueba con un límite negativo, lo que significa que no hay un límite
- superior en el número de elementos a devolver. Por ejemplo, limit = -1.
-b) Límite = 0: Prueba con un límite igual a cero, lo que implica que no se deben devolver
- elementos. Por ejemplo, limit = 0.
+      a) Límite < 0: Prueba con un límite negativo, lo que significa que no hay un límite
+       superior en el número de elementos a devolver. Por ejemplo, limit = -1.
+      b) Límite = 0: Prueba con un límite igual a cero, lo que implica que no se deben devolver
+       elementos. Por ejemplo, limit = 0.
 
-c) Límite > 0: Prueba con un límite positivo para limitar el número máximo de elementos
- a devolver. Por ejemplo, limit = 3.
-
-
+      c) Límite > 0: Prueba con un límite positivo para limitar el número máximo de elementos
+       a devolver. Por ejemplo, limit = 3.
 
 
-<a name="br2"></a>(b) Ahora, escriba una buena partición del espacio de entrada sobre la relación entre el límite
+
+(b) Ahora, escriba una buena partición del espacio de entrada sobre la relación entre el límite
  y las ocurrencias del delimitador en el texto. Tu partición debe mencionar las tres
  entradas.
 
-a) Sin ocurrencias del delimitador en el texto: Prueba con un texto que no contiene el
- delimitador. Por ejemplo, texto = "Hola Mundo" y delimitador = ','.
+     a) Sin ocurrencias del delimitador en el texto: Prueba con un texto que no contiene el
+      delimitador. Por ejemplo, texto = "Hola Mundo" y delimitador = ','.
 
-b) Menos de (límite-1) ocurrencias del delimitador en el texto: Prueba con un texto que
- contiene menos ocurrencias del delimitador que el límite especificado menos uno. Por
- ejemplo, texto = "Uno-Dos-Tres-Cuatro-Cinco", delimitador = '-' y límite = 3.
-c) Igual o más de (límite-1) ocurrencias del delimitador en el texto: Prueba con un texto
- que contiene igual o más ocurrencias del delimitador que el límite especificado menos
- uno. Esto debería generar una excepción IllegalArgumentException. Por ejemplo,
- texto = "Uno-Dos-Tres-Cuatro-Cinco-Seis", delimitador = '-' y límite = 4.
+     b) Menos de (límite-1) ocurrencias del delimitador en el texto: Prueba con un texto que
+      contiene menos ocurrencias del delimitador que el límite especificado menos uno. Por
+      ejemplo, texto = "Uno-Dos-Tres-Cuatro-Cinco", delimitador = '-' y límite = 3.
+     c) Igual o más de (límite-1) ocurrencias del delimitador en el texto: Prueba con un texto
+      que contiene igual o más ocurrencias del delimitador que el límite especificado menos
+      uno. Esto debería generar una excepción IllegalArgumentException. Por ejemplo,
+      texto = "Uno-Dos-Tres-Cuatro-Cinco-Seis", delimitador = '-' y límite = 4.
