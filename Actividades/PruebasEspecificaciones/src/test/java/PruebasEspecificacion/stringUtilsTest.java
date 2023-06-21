@@ -54,4 +54,17 @@ public class stringUtilsTest {
         assertThat(substringsBetween("aabb", "aa", "bb"))
                 .isEqualTo(new String[] { ""});
     }
+    @Test
+    void openAndCloseOfLength1_extra() {
+// ... aseveraciones previas
+        assertThat(substringsBetween("abcabyt byrc", "a", "c"))
+                .isEqualTo(new String[ ] {"b", "byt byr"});
+    }
+    @Test
+    void openAndCloseTagsOfDifferentSizes_extra() {
+// ...aseveraciones previas
+        assertThat(substringsBetween("a abb ddc ca abbcc", "a a", "c c"))
+                . isEqualTo(new String[ ]      {"bb dd"});
+    }
+
 }
