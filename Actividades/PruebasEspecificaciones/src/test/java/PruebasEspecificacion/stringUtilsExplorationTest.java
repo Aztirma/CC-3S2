@@ -1,7 +1,7 @@
 package PruebasEspecificacion;
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
-public class StringUtilsExplorationTest {
+public class stringUtilsExplorationTest {
 
     //Pruebas realizadas en el paso2
     @Test
