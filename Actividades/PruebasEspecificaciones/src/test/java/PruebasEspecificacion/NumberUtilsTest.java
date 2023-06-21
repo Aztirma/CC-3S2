@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.stream.Stream;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.AssertionsForClassTypes.assertThatThrownBy;
 import static org.junit.jupiter.params.provider.Arguments.of;
 public class NumberUtilsTest {
 
@@ -44,6 +45,22 @@ public class NumberUtilsTest {
                 of(numbers(), numbers(), numbers()), // T19: sin aumento (right más larga a left)
                 of(numbers(), numbers(), numbers()), // T20: con aumento (right más larga a left)
                 of(numbers(9), numbers(2), numbers(1, 1))// T21: aumento a un nuevo dígito más significativo, por uno (como 99 + 1)
+        );
+    }
+    @ParameterizedTest
+    @MethodSource("digitsOutOfRange")
+    void shouldThrowExceptionWhenDigitsAreOutOfRange(List<Integer> left, List<Integer> right) {
+        assertThatThrownBy(() -> new NumberUtils().add(left, right))
+                .isInstanceOf(IllegalArgumentException.class);
+
+    }
+
+    static Stream<Arguments> digitsOutOfRange() {
+        return Stream.of(
+                of(numbers(1,-1,1), numbers(1)),
+                of(numbers(1), numbers(1,-1,1)),
+                of(numbers(1,11,1), numbers(1)),
+                of(numbers(1), numbers(1,11,1))
         );
     }
 
