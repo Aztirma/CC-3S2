@@ -2,6 +2,13 @@ package PruebasEspecificacion;
 import java.util.ArrayList;
 import java.util.List;
 public class stringUtils {
+
+    private static final String[] EMPTY_STRING_ARRAY = new String[0];
+
+    private static boolean isEmpty(final CharSequence cs) {
+        return cs == null || cs.length() == 0;
+    }
+
     public static String[] substringsBetween(final String str, final String open, final String close) {
         if (str == null || isEmpty(open) || isEmpty(close)) {
             return null;
